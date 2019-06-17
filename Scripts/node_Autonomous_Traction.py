@@ -7,9 +7,9 @@ from Ros.msg import traction_Orders
 
 
 def goal_Callback(param):
-
+    pass
 def position_Callback(param):
-
+    pass
 
 def node_Autonomous_Traction():
     #creacion del nodo

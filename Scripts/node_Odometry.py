@@ -10,7 +10,6 @@ from ROS.msg import position
 def IMU_Speed_Callback(param):
     pass
 
-
 def RPM_Callback(param):
     pass
 
