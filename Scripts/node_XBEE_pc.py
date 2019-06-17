@@ -5,11 +5,11 @@ from ROS.msg import arm_Orders
 from ROS.msg import traction_Orders
 
 def connection_Callback(parm):
-pass
+    pass
 def arm_Orders_Callback(parm):
-pass
+    pass
 def traction_Orders_Callback(param):
-pass
+    pass
 
 def node_XBEE_pc():
 
