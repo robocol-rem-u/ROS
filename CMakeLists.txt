@@ -29,7 +29,10 @@ add_message_files(
   rpm.msg
   traction_Orders.msg
 )
-
+add_service_files(
+  FILES
+  enable.srv
+)
 # add_service_files(
 #   FILES
 #   Service1.srv

@@ -24,5 +24,8 @@ if __name__ == '__main__':
     try:
 
         node_Arm_Traction()
+        rate = rospy.Rate (10)
+        while not rospy.is_shutdown ():
+            rate.sleep ()
     except rospy.ROSInterruptException:
         pass
