@@ -16,7 +16,7 @@ def node_Arm_Traction():
     rospy.Subscriber ('topic_Pots', pots, pots_Callback)
     #Se publica ordenes sobre las ordenes del brazo
     pub_Arm_Orders = rospy.Publisher ('topic_Arm_Orders', arm_Orders, queue_size=10)
-
+    
 
 
 if __name__ == '__main__':
