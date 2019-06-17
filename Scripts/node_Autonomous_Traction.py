@@ -2,17 +2,15 @@
 import rospy
 
 
-def nodoAutonomoTraccion():
-    rospy.init_node('nodoAutonomoTraccion',anonymous=True)
+def node_Autonomous_Traction():
+    rospy.init_node('node_Autonomous_Traction',anonymous=True)
     
-
-
 
 
 
 if __name__ == '__main__':
     try:
-       
-        nodoAutonomoTraccion()
+
+        node_Autonomous_Traction()
     except rospy.ROSInterruptException:
         pass
