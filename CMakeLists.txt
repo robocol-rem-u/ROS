@@ -26,7 +26,7 @@ add_message_files(
   IMU_Speed.msg
   position.msg
   pots.msg
-  rpm.msg
+  RPM.msg
   traction_Orders.msg
 )
 add_service_files(
