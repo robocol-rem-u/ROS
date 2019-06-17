@@ -19,8 +19,8 @@ def IMU_Magnetism_Callback(param):
 
 
 def node_Odometry():
-	# Se inicia el nodo de odometria
-	rospy.init_node ('node_Odometry', anonymous=True)
+    # Se inicia el nodo de odometria
+    rospy.init_node ('node_Odometry', anonymous=True)
     # Se suscribe a al topico de la informacion de la velocidad segun IMU
     rospy.Subscriber ('topic_IMU_Speed', IMU_Speed, IMU_Speed_Callback)
     # Se suscribe a al topico de la informacion de RPM

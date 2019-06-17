@@ -30,6 +30,9 @@ def node_FPGA():
     pub_RPM = rospy.Publisher('topic_RPM', RPM, queue_size=10)
     pub_Corn = rospy.Publisher('topic_Corn', corn, queue_size=10)
     pub_Pots= rospy.Publisher('topic_Pots',pots,queue_size=10)
+    rate = rospy.Rate (10)
+    while not rospy.is_shutdown ():
+        rate.sleep ()
 
 
 
@@ -39,5 +42,6 @@ if __name__ == '__main__':
     try:
 
         node_FPGA()
+
     except rospy.ROSInterruptException:
         pass
