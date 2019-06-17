@@ -5,6 +5,10 @@ import rospy
 def node_IMU():
 	# Se inicia el nodo de odometria
     rospy.init_node ('node_IMU', anonymous=True)
+    # Se publica al topico sobre la velocidad segun IMU
+    pub_IMU_Speed = rospy.Publisher ('topic_IMU_Speed', IMU_Speed, queue_size=10)
+    # Se publica al topico sobre la velocidad segun IMU
+    pub_IMU_Magnetism = rospy.Publisher ('topic_IMU_Magnetism', IMU_Magnetism, queue_size=10)
 
 
 # Metodo principal, crea el nodo de ROS, se suscribe a topico de informacion obstaculos e imprime su informacion
@@ -12,8 +16,5 @@ def node_IMU():
 if __name__ == '__main__':
     try:
     	node_IMU()
-        rate = rospy.Rate (10)
-        while not rospy.is_shutdown ():
-            rate.sleep ()
     except rospy.ROSInterruptException:
         pass
