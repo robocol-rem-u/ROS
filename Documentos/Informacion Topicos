@@ -1,2 +1,25 @@
 A continuacion se dara la informacion relevante acerca de los tipos de datos que se envian en cada uno de los topicos listados:
+topic_Conection: 1 dato de entrada tipo Float32 (0 o 1)
+
+topic_Arm_Orders: 
+
+topic_Traction_Orders: 
+
+topic_Goal
+
+topic_IMU_Speed
+
+topic_IMU_Magnetism
+
+topic_Position
+
+topic_RPM
+
+topic_Pots
+
+topic_Corn
+
+
+
+
 
