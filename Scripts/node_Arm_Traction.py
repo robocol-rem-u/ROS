@@ -2,8 +2,8 @@
 import rospy
 
 
-def nodoTraccionBrazo():
-    rospy.init_node('nodoTraccionBrazo',anonymous=True)
+def node_Arm_Traction():
+    rospy.init_node('node_Arm_Traction',anonymous=True)
 
 
 
@@ -13,6 +13,6 @@ def nodoTraccionBrazo():
 if __name__ == '__main__':
     try:
 
-        nodoTraccionBrazo()
+        node_Arm_Traction()
     except rospy.ROSInterruptException:
         pass

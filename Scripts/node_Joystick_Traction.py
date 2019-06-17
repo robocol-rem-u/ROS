@@ -2,8 +2,8 @@
 import rospy
 
 
-def nodoTraccionJoystick():
-    rospy.init_node('nodoTraccionJoystick',anonymous=True)
+def node_Joystick_Traction():
+    rospy.init_node('node_Joystick_Traction',anonymous=True)
     
 
 
@@ -13,6 +13,6 @@ def nodoTraccionJoystick():
 if __name__ == '__main__':
     try:
        
-        nodoTraccionJoystick()
+        node_Joystick_Traction()
     except rospy.ROSInterruptException:
         pass
