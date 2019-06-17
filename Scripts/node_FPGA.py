@@ -9,12 +9,12 @@ from Ros.msg import pots
 
 
 def traction_Orders_Callback(param):
-
+    pass
 
 def connection_Callback(param):
-
+    pass
 def arm_Orders_Callback(param):
-
+    pass
 
 def node_FPGA():
     #creacion del nodo
