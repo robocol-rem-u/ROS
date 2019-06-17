@@ -1,11 +1,11 @@
 <launch>
-  <node pkg="Ros" type="node_Interface.py" name="node_Interface"/>
-  <node pkg="Ros" type="node_IMU.py" name="node_IMU"/>
-  <node pkg="Ros" type="node_Arm_Traction.py" name="node_Arm_Traction"/>
-  <node pkg="Ros" type="node_Autonomous_Traction.py" name="node_Autonomous_Traction"/>
-  <node pkg="Ros" type="node_FPGA.py" name="node_FPGA"/>
-  <node pkg="Ros" type="node_Joystick_Traction.py" name="node_Joystick_Traction"/>
-  <node pkg="Ros" type="node_Odometry.py" name="node_Odometry"/>
-  <node pkg="Ros" type="node_XBEE_pc.py" name="node_XBEE_pc"/>
+  <node pkg="ROS" type="node_Interface.py" name="node_Interface"/>
+  <node pkg="ROS" type="node_IMU.py" name="node_IMU"/>
+  <node pkg="ROS" type="node_Arm_Traction.py" name="node_Arm_Traction"/>
+  <node pkg="ROS" type="node_Autonomous_Traction.py" name="node_Autonomous_Traction"/>
+  <node pkg="ROS" type="node_FPGA.py" name="node_FPGA"/>
+  <node pkg="ROS" type="node_Joystick_Traction.py" name="node_Joystick_Traction"/>
+  <node pkg="ROS" type="node_Odometry.py" name="node_Odometry"/>
+  <node pkg="ROS" type="node_XBEE_pc.py" name="node_XBEE_pc"/>
 
 </launch>
