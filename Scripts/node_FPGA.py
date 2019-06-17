@@ -2,8 +2,8 @@
 import rospy
 
 
-def nodoFPGA():
-    rospy.init_node('nodoFPGA',anonymous=True)
+def node_FPGA():
+    rospy.init_node('node_FPGA',anonymous=True)
 
 
 
@@ -13,6 +13,6 @@ def nodoFPGA():
 if __name__ == '__main__':
     try:
 
-        nodoFPGA()
+        node_FPGA()
     except rospy.ROSInterruptException:
         pass

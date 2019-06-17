@@ -2,9 +2,9 @@
 #Se importan las librerias necesarias junto con los mensajes a utilizar
 import rospy
 
-def nodoOdometria()
+def node_Odometry():
 	# Se inicia el nodo de odometria
-	rospy.init_node ('nodoOdometria', anonymous=True)
+	rospy.init_node ('node_Odometry', anonymous=True)
 	
 
 
@@ -12,7 +12,7 @@ def nodoOdometria()
 # mientras que el nodo se este ejecutando
 if __name__ == '__main__':
     try:
-    	nodoOdometria()
+    	node_Odometry()
         rate = rospy.Rate (10)
         while not rospy.is_shutdown ():
             rate.sleep ()
