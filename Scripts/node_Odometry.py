@@ -6,7 +6,6 @@ import rospy
 def IMU_Speed_Callback(param):
 
 
-
 def RPM_Callback(param):
 
 
