@@ -20,7 +20,9 @@ def node_XBEE_pc():
     rospy.Subscriber ('topic_Arm_Orders', arm_Orders, arm_Orders_Callback)
     # Se suscribe a al topico que indica ordenes sobre ruedas
     rospy.Subscriber ('topic_Traction_Orders', traction_Orders, traction_Orders_Callback)
-pass
+    rate = rospy.Rate (10)
+    while not rospy.is_shutdown ():
+        rate.sleep ()
 
 
 if __name__ == '__main__':

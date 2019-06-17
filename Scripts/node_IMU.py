@@ -13,7 +13,9 @@ def node_IMU():
     pub_IMU_Speed = rospy.Publisher ('topic_IMU_Speed', IMU_Speed, queue_size=10)
     # Se publica al topico sobre la velocidad segun IMU
     pub_IMU_Magnetism = rospy.Publisher ('topic_IMU_Magnetism', IMU_Magnetism, queue_size=10)
-
+    rate = rospy.Rate (10)
+    while not rospy.is_shutdown ():
+        rate.sleep ()
 
 # Metodo principal, crea el nodo de ROS, se suscribe a topico de informacion obstaculos e imprime su informacion
 # mientras que el nodo se este ejecutando
