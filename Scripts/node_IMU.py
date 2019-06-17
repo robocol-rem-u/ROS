@@ -1,6 +1,10 @@
 #!/usr/bin/env python
 #Se importan las librerias necesarias junto con los mensajes a utilizar
 import rospy
+from ROS.msg import IMU_Speed
+from ROS.msg import IMU_Magnetism
+
+
 
 def node_IMU():
 	# Se inicia el nodo de odometria

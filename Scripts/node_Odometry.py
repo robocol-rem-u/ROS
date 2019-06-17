@@ -1,18 +1,22 @@
 #!/usr/bin/env python
 #Se importan las librerias necesarias junto con los mensajes a utilizar
 import rospy
+from ROS.msg import IMU_Speed
+from ROS.msg import IMU_Magnetism
+from ROS.msg import RPM
+from ROS.msg import position
 
 
 def IMU_Speed_Callback(param):
-
+    pass
 
 
 def RPM_Callback(param):
-
+    pass
 
 
 def IMU_Magnetism_Callback(param):
-
+    pass
 
 
 def node_Odometry():
@@ -25,7 +29,7 @@ def node_Odometry():
     # Se suscribe a al topico de la informacion de 
     rospy.Subscriber ('topic_IMU_Magnetism', IMU_Magnetism, IMU_Magnetism_Callback)
     # Se crea referencia a topico para publicar posiciones
-    pub_Position = rospy.Publisher ('topic_Position', Position, queue_size=10)
+    pub_Position = rospy.Publisher ('topic_Position', position, queue_size=10)
 
 
 # Metodo principal, crea el nodo de ROS, se suscribe a topico de informacion obstaculos e imprime su informacion
