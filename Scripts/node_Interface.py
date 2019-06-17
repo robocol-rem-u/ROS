@@ -15,6 +15,9 @@ def node_Interface():
     pub_Arm_Orders = rospy.Publisher('topic_Arm_Orders', arm_Orders, queue_size=10)
     pub_Connection = rospy.Publisher('topic_Connection', connection, queue_size=10)
     pub_Traction_Orders = rospy.Publisher('topic_Traction_Orders', traction_Orders, queue_size=10)
+    rate = rospy.Rate (10)
+    while not rospy.is_shutdown ():
+        rate.sleep ()
 
 
 def traction_Orders_Callback(param):
@@ -43,5 +46,6 @@ if __name__ == '__main__':
     try:
 
         node_Interface()
+
     except rospy.ROSInterruptException:
         pass
