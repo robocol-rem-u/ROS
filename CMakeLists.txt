@@ -7,14 +7,6 @@ find_package(catkin REQUIRED
   geometry_msgs
   message_generation
 )
-catkin_package(
-  CATKIN_DEPENDS 
-  message_runtime
-  roscpp
-  rospy
-  std_msgs
-  geometry_msgs
-)
 
 add_message_files(
   FILES
@@ -29,12 +21,33 @@ add_message_files(
   RPM.msg
   traction_Orders.msg
 )
+
 add_service_files(
   FILES
   enable.srv
 )
+
+generate_messages(
+    DEPENDENCIES
+    std_msgs
+
+)
+
+
+catkin_package(
+  CATKIN_DEPENDS 
+  message_runtime
+  roscpp
+  rospy
+  std_msgs
+  geometry_msgs
+)
+
+
 # add_service_files(
 #   FILES
 #   Service1.srv
 #   Service2.srv
 # )
+
+
