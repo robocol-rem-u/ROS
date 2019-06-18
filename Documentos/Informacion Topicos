@@ -1,23 +1,26 @@
 A continuacion se dara la informacion relevante acerca de los tipos de datos que se envian en cada uno de los topicos listados:
+
 topic_Conection: 1 dato de entrada tipo Float32 (0 o 1)
 
 topic_Arm_Orders: 
 
-topic_Traction_Orders: 
+topic_Traction_Orders: 2 datos (velocidad motor izq y der) tipo Float32
 
 topic_Goal: 3 datos de entrada (x,y theta) tipo Float32
 
-topic_IMU_Speed
+topic_IMU_Speed: 6 datos twist Float32
 
-topic_IMU_Magnetism
+topic_IMU_Magnetism: 3 datos FLoat32
 
 topic_Position: 3 datos de entrada (x,y theta) tipo Float32
 
-topic_RPM
+topic_RPM: 6 datos uno para cada motor float 32
 
-topic_Pots
+topic_Pots: 6 datos 
 
-topic_Corn
+topic_Current: 6 datos float32 
+
+topic_Sensibility:un dato float32 vel max ambos motores
 
 
 
