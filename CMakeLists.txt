@@ -12,7 +12,7 @@ add_message_files(
   FILES
   arm_Orders.msg
   connection.msg
-  corn.msg
+  current.msg
   goal.msg
   IMU_Magnetism.msg
   IMU_Speed.msg
