@@ -8,7 +8,7 @@ def node_Interface():
     rospy.Subscriber('topic_IMU_Speed', IMU_Speed, IMU_Speed_Callback)
     rospy.Subscriber('topic_IMU_Magnetism', IMU_Magnetism, IMU_Magnetism_Callback)
     rospy.Subscriber('topic_Pots', pots, pots_Callback)
-    rospy.Subscriber('topic_Current', current, corn_Callback)
+    rospy.Subscriber('topic_Current', current, current_Callback)
     rospy.Subscriber('topic_RPM', RPM, RPM_Callback)
     rospy.Subscriber('topic_Arm_Orders', arm_Orders, arm_Orders_Callback)
     pub_Goal = rospy.Publisher('topic_Goal', goal, queue_size=10)
@@ -32,7 +32,7 @@ def IMU_Magnetism_Callback(param):
 def pots_Callback(param):
     pass
 
-def corn_Callback(param):
+def current_Callback(param):
     pass
 
 def RPM_Callback(param):
