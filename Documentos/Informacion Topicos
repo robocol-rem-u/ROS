@@ -5,13 +5,13 @@ topic_Arm_Orders:
 
 topic_Traction_Orders: 
 
-topic_Goal
+topic_Goal: 3 datos de entrada (x,y theta) tipo Float32
 
 topic_IMU_Speed
 
 topic_IMU_Magnetism
 
-topic_Position
+topic_Position: 3 datos de entrada (x,y theta) tipo Float32
 
 topic_RPM
 
