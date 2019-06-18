@@ -20,6 +20,7 @@ add_message_files(
   pots.msg
   RPM.msg
   traction_Orders.msg
+  sensibility.msg
 )
 
 #add_service_files(

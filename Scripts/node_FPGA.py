@@ -6,7 +6,7 @@ from ROS.msg import arm_Orders
 from ROS.msg import RPM
 from ROS.msg import current
 from ROS.msg import pots
-
+from ROS.msg import sensibility
 
 def traction_Orders_Callback(param):
     pass
@@ -14,6 +14,8 @@ def traction_Orders_Callback(param):
 def connection_Callback(param):
     pass
 def arm_Orders_Callback(param):
+    pass
+def sensibility_Callback(param):
     pass
 
 def node_FPGA():
@@ -26,6 +28,8 @@ def node_FPGA():
     rospy.Subscriber ('topic_Connection', connection, connection_Callback)
     # se subscribe al topico Arm Orders
     rospy.Subscriber ('topic_Arm_Orders', arm_Orders, arm_Orders_Callback)
+    #se subscribe a sensibility
+    rospy.Subscriber ('topic_Sensibility', sensibility, sensibility_Callback)   
     # publica en RPM, Current y POTS
     pub_RPM = rospy.Publisher('topic_RPM', RPM, queue_size=10)
     pub_Current = rospy.Publisher('topic_Current', current, queue_size=10)
