@@ -22,16 +22,15 @@ add_message_files(
   traction_Orders.msg
 )
 
-add_service_files(
-  FILES
-  enable.srv
-)
-
-#generate_messages(
-#    DEPENDENCIES
-#    std_msgs
-
+#add_service_files(
+#  FILES
+#  enable.srv
 #)
+
+generate_messages(
+    DEPENDENCIES
+    std_msgs
+)
 
 
 catkin_package(
