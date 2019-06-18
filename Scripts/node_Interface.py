@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import rospy
-from ROS.msg import traction_Orders, IMU_Speed, IMU_Magnetism, pots, corn, RPM, arm_Orders, goal, connection
+from ROS.msg import traction_Orders, IMU_Speed, IMU_Magnetism, pots, current, RPM, arm_Orders, goal, connection
 
 def node_Interface():
     rospy.init_node('node_Interface',anonymous=True)

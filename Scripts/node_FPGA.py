@@ -4,7 +4,7 @@ from ROS.msg import traction_Orders
 from ROS.msg import connection
 from ROS.msg import arm_Orders
 from ROS.msg import RPM
-from ROS.msg import corn
+from ROS.msg import current
 from ROS.msg import pots
 
 
@@ -26,9 +26,9 @@ def node_FPGA():
     rospy.Subscriber ('topic_Connection', connection, connection_Callback)
     # se subscribe al topico Arm Orders
     rospy.Subscriber ('topic_Arm_Orders', arm_Orders, arm_Orders_Callback)
-    # publica en RPM, CORN y POTS
+    # publica en RPM, Current y POTS
     pub_RPM = rospy.Publisher('topic_RPM', RPM, queue_size=10)
-    pub_Corn = rospy.Publisher('topic_Current', current, queue_size=10)
+    pub_Current = rospy.Publisher('topic_Current', current, queue_size=10)
     pub_Pots= rospy.Publisher('topic_Pots',pots,queue_size=10)
     rate = rospy.Rate (10)
     while not rospy.is_shutdown ():
